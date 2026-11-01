@@ -1,0 +1,4 @@
+/* Tampilan khusus ringkasan statistik dashboard. */
+.stat-grid { align-items: stretch; }
+.stat-card { position: relative; overflow: hidden; }
+.stat-card::after { content: ''; position: absolute; inset: auto -18px -30px auto; width: 90px; height: 90px; border-radius: 50%; background: #1760440a; pointer-events: none; }

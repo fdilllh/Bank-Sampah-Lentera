@@ -1,0 +1,4 @@
+/* Tampilan khusus laporan bulanan dan hasil cetaknya. */
+.report-actions { gap: 10px; }
+.print-heading { margin-bottom: 18px; }
+@media print { .report-actions { display: none !important; } }

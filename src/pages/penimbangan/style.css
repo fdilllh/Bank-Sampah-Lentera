@@ -1,0 +1,4 @@
+/* Tampilan khusus formulir penimbangan multi-barang. */
+.form-layout { align-items: start; }
+.input-table td { vertical-align: middle; }
+.settlement-choice { background: #fbfdfb; }

@@ -1,0 +1,3 @@
+/* Tampilan khusus katalog jenis sampah dan harga. */
+.section-heading .button-group { justify-content: flex-end; }
+.table-wrap td:first-child { font-weight: 600; }

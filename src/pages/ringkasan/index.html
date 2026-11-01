@@ -1,0 +1,10 @@
+<!-- Template HTML fitur dashboard; angka dan tabel aktivitas diisi melalui placeholder. -->
+<div class="stat-grid">
+  <article class="stat-card"><span class="stat-icon green">♻</span><span>{{CUSTOMER_LABEL}}</span><strong>{{CUSTOMER_COUNT}}</strong><small>{{CUSTOMER_NOTE}}</small></article>
+  <article class="stat-card"><span class="stat-icon blue">⚖</span><span>SAMPAH TERTIMBANG</span><strong>{{TOTAL_WEIGHT}} <small>kg</small></strong><small>{{WEIGHT_NOTE}}</small></article>
+  <article class="stat-card"><span class="stat-icon orange">↗</span><span>NILAI SETORAN</span><strong>{{TOTAL_DEPOSIT}}</strong><small>{{DEPOSIT_NOTE}}</small></article>
+  <article class="stat-card"><span class="stat-icon purple">▣</span><span>{{BALANCE_LABEL}}</span><strong>{{TOTAL_BALANCE}}</strong><small>{{BALANCE_NOTE}}</small></article>
+</div>
+<div class="section-heading"><div><p class="eyebrow">AKTIVITAS TERBARU</p><h2>{{ACTIVITY_TITLE}}</h2></div>{{WEIGH_BUTTON}}</div>
+{{TRANSACTION_TABLE}}
+<div class="callout"><span>Info</span><div><b>{{INFO_TITLE}}</b><p>{{INFO_DESCRIPTION}}</p></div></div>

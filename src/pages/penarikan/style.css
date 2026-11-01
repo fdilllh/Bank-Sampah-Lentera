@@ -1,0 +1,4 @@
+/* Tampilan khusus formulir pencairan saldo. */
+.form-layout { align-items: start; }
+.form-layout > .panel:first-child { max-width: 760px; }
+.note-panel { align-self: start; }

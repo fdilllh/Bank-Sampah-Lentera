@@ -1,0 +1,3 @@
+/* Gaya menu khusus area admin. */
+.admin-navigation { display: grid; gap: 5px; }
+.admin-navigation .nav-link.active { box-shadow: inset 3px 0 #155b40; }

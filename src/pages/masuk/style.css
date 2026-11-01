@@ -1,0 +1,4 @@
+/* Tampilan khusus halaman masuk. */
+.login-wrap { background-image: radial-gradient(ellipse at 12% 12%, #e3f2e8 0, transparent 42%); }
+.login-card { max-width: 460px; }
+.login-card .brand-mark { display: grid; place-items: center; min-height: 56px; }

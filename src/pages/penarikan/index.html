@@ -1,0 +1,10 @@
+<!-- Template HTML fitur penarikan saldo tabungan nasabah. -->
+<div class="form-layout">
+  <form id="withdraw-form" class="panel"><h2>Formulir penarikan tabungan</h2><p class="muted">Penarikan dicatat pada riwayat dan langsung mengurangi saldo nasabah.</p>
+    <label>Nama nasabah<select name="customer_id" required><option value="">Pilih nasabah</option>{{CUSTOMERS}}</select></label>
+    <label>Tanggal penarikan<input name="date" type="date" value="{{DATE}}" required></label>
+    <label>Nominal penarikan (Rp)<input name="amount" type="number" min="1" step="1" required placeholder="0"></label>
+    <button class="button primary full">Simpan penarikan</button>
+  </form>
+  <aside class="panel note-panel"><h3>Periksa saldo sebelum menyimpan</h3><p>Nominal penarikan tidak boleh melebihi saldo tabungan nasabah. Setelah disimpan, perubahan dapat dilihat pada menu riwayat transaksi.</p></aside>
+</div>

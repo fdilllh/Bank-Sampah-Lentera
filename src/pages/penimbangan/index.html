@@ -1,0 +1,15 @@
+<!-- Template HTML fitur pencatatan penimbangan dan pilihan hasil transaksi. -->
+<div class="form-layout">
+  <form id="weigh-form" class="panel">
+    <div class="section-heading compact"><div><h2>Formulir penimbangan</h2><p class="muted">Masukkan berat barang dalam kg atau jumlah untuk barang per unit.</p></div></div>
+    <div class="form-grid"><label>Nama nasabah<select name="customer_id" required><option value="">Pilih nasabah</option>{{CUSTOMERS}}</select></label><label>Tanggal penimbangan<input name="date" type="date" value="{{DATE}}" required></label></div>
+    <div class="table-wrap input-table"><table><thead><tr><th>JENIS BARANG</th><th>HARGA</th><th>BERAT / JUMLAH</th><th>NILAI</th><th></th></tr></thead><tbody id="weight-rows">{{WEIGHT_ROW}}</tbody></table></div>
+    <button type="button" class="button secondary" id="add-weight-row">Tambah baris barang</button>
+    <fieldset class="settlement-choice"><legend>Hasil transaksi</legend>
+      <label class="settlement-option"><input type="radio" name="disposition" value="tabung" checked><span><b>Masukkan ke tabungan</b><small>Nilai transaksi ditambahkan ke saldo nasabah.</small></span></label>
+      <label class="settlement-option"><input type="radio" name="disposition" value="cairkan"><span><b>Cairkan langsung</b><small>Nilai transaksi langsung diberikan tunai dan tidak menambah saldo.</small></span></label>
+    </fieldset>
+    <div class="total-row"><span>Total transaksi</span><strong id="weight-total">Rp0</strong></div><button class="button primary full">Simpan penimbangan</button>
+  </form>
+  <aside class="panel note-panel"><span class="stat-icon green">Info</span><h3>Alur pencatatan</h3><p>Petugas memasukkan data nasabah dan barang yang ditimbang. Setelah itu pilih apakah nilainya masuk ke tabungan atau langsung dicairkan.</p><p>Nasabah tidak memerlukan akun login untuk memiliki catatan dan saldo.</p></aside>
+</div>
